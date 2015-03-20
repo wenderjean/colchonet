@@ -1,0 +1,92 @@
+pt-BR:
+  flash:
+    notice:
+      signed_in: Login efetuado com sucesso.
+      signed_out: Obrigado por usar Colcho.net
+  activerecord:
+    models:
+      user: Usuário
+      room: Quarto
+      review: Avaliação
+    attributes:
+      user:
+        bio: Biografia
+        email: email
+        full_name: Nome Completo
+        location: Localização
+        password: Senha
+        password_confirmation: Confirme sua senha
+      room:
+        description: Descrição
+        location: Localização
+        title: Título
+  users:
+    new:
+      title: Cadastrar Usuário
+    edit:
+      title: Editar Perfil
+    show:
+      title: '%{user_name}'
+      location: 'Localização: %{location}'
+      bio: 'Bio: %{bio}'
+  rooms:
+    index: 
+      title: Quartos Cadastrados
+      search_query: Resultado da pesquisa
+    room:
+      owner_html: '%{owner}'
+      edit: 'Editar'
+      destroy: 'Excluir'
+    new:
+      title: Cadastrar Quarto
+    review_form:
+      login_to_review: Faça o login para avaliar quartos
+    review:
+      stats:
+        one: '(1 avaliação)'
+        other: '(%{count} avaliações)'
+    search:
+      search_for: 'Pesquisar'
+  links:
+    back: Voltar
+    edit: Editar
+  layout:
+    rooms: Quartos
+    signin: Entrar
+    signup: Cadastro
+    signout: Sair
+    new_room: Novo Quarto
+    my_profile: Perfil
+  general:
+    form_error: Há erros no formulário, por favor verifique.
+  signup:
+    confirm_email:
+      subject: 'Colcho.net - Confirme seu email'
+      title: 'Seja bem vindo ao Colcho.net'
+      body: |
+        Seja bem vindo ao Colcho.net, %{full_name}.
+        O Colcho.net é o lugar ideal para você alugar aquele quarto
+        sobrando na sua casa e ainda conhecer gente do mundo inteiro.
+      confirm_link_email: 'Para você começar a usar o site, acesse o link: %{link}'
+      thanks_html: 'Obrigado por se cadastrar no %{link}.'
+    confirmations:
+      success: Email confirmado com sucesso, obrigado!
+  user_sessions:
+    new:
+      title: Login
+      sign_up: Cadastre-se
+  activemodel:
+    errors:
+      models:
+        user_session:
+          attributes:
+            base:
+              invalid_login: Usuário ou Senha inválidos.
+    attributes:
+      user_session:
+        email: Email
+        senha: Senha
+  helpers:
+    submit:
+      user_session:
+        create: Entrar

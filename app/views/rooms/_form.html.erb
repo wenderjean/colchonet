@@ -1,0 +1,18 @@
+<%= form_for(@room) do |f| %>
+  
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= error_tag @room, :title %>
+  
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <%= error_tag @room, :location %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <%= error_tag @room, :description %>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

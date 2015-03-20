@@ -1,0 +1,36 @@
+en:
+  activerecord:
+    models:
+      user: User
+    attributes:
+      user:
+        bio: Biography
+        email: email
+        full_name: Full Name
+        location: Location
+        password: Password
+        password_confirmation: Password Confirmation
+      room:
+        description: Description
+        location: Locale
+        title: Title
+  users:
+    new:
+      title: New User
+    edit:
+      title: Edit Profile
+    show:
+      title: '%{user_name}'
+      location: 'Location: %{location}'
+      bio: 'Bio: %{bio}'
+  rooms:
+    new:
+      title: New Room
+  links:
+    back: Back
+    edit: Edit
+  layout:
+    rooms: Rooms
+    signup: Signup
+  general:
+    form_error: Errors has found, please take a look.

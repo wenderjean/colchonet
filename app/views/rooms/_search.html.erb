@@ -1,0 +1,3 @@
+<%= form_tag rooms_path, method: :get, class: 'search' do %>
+	<%= text_field_tag :q, nil, :placeholder => t('.search_for') %>
+<% end %>

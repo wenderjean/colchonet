@@ -1,0 +1,13 @@
+<%= render 'search' %>
+
+<h1>
+	<% if @search_query.present? %>
+		<%= t '.search_query' %>
+	<% else %>
+		<%= t '.title' %>
+	<% end %>
+</h1>
+
+<%= render @rooms %>
+
+<%= paginate @rooms %>
